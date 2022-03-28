@@ -1,0 +1,161 @@
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+.header_aboutUs{
+	width: 100%;
+	height: 100px;
+}
+
+/* logo height and width */
+.picture{
+	width: 5%;
+	height:5%;
+}
+
+/* the top menu */
+
+.navbar{
+	width:100%;
+	padding:20px;
+	position:fixed;
+	top:0px;
+	transition:0.5s;
+	background-color: rgba(18, 11, 11, 0.2);
+	padding-bottom:0;
+	padding-top:0;
+}
+.navbar .navbar-right ul li{
+	list-style-type:none;
+	display:inline-block;
+}
+.navbar .navbar-right ul li a{
+	padding:10px 12px;
+	font-family: Calbri, sans-serif;
+	cursor:pointer;
+	border-radius:10px;
+	color:white;
+	text-decoration:none;
+}
+.navbar .navbar-right ul li a:hover{
+	background-color: rgba(255, 255, 255, 0.5);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+.navbar .navbar-right{
+	float:right;
+	padding-top:20px;
+}
+
+
+/* end of menu*/
+
+/*start of about us*/
+
+.team{
+	overflow: hidden;
+	text-align: center;
+	background: #E0F8F7;
+	padding: 70px;
+
+}
+.team h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: black;
+	font-size: 40px;
+}
+.border{
+	display:block;
+	margin: auto;
+	width: 500px;
+	height: 6px;
+	background: #E5350F;
+	margin-bottom: 20px;
+}
+
+.ps{
+	margin-bottom: 20px;
+}
+
+.ps a{
+	display: inline-block;
+	margin: 0 50px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 10%;
+}
+
+.ps a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.ps a:hover > img{
+	filter: none;
+}
+.section{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: black;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target{
+	height: auto;
+}
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	
+}
+.section li.name-listing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(35, 203, 119, 0.74);
+}
+/* start of footer*/
+.footer {
+	font-family: Arial, sans-serif;
+	padding-top:20px;
+	background-color:rgba(255, 255, 255, 0.3);
+	width:100%;
+	height:60px;
+	bottom:0;
+	
+}
+.footer_fontSizechange{
+	align-items:center;
+	justify-content:center;
+	width: auto; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+	padding-left:20px;
+    padding-bottom: 10px;
+	padding-left:20px;
+    position: relative;
+}
+
+.footer a{
+	padding:10px 20px;
+	cursor:pointer;
+	color: black;
+	border-radius:10px;
+	text-decoration:none;
+}
+.footer a:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+

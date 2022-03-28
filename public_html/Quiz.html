@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="CSS/stylequiz.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    
+
+
+    <style>
+	body{
+    background-image: url('photos/bimage.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+	font-family: Comic Sans MS,Comic Sans;
+	font-size: 16px;
+    }
+    </style>
+
+</head>
+
+
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="header_aboutUs">
+			<div class="navbar">
+				<img src="photos/mylogo.jpg" alt="logo" class="picture" >
+				<div class="navbar-right">
+					<ul>
+						<li><a href="MainPage.html">Home</a></li>
+						<li><a href="AboutUs.html">About Us</a></li>
+						<li><a href="Shop.html">Shop</a></li>
+						<li><a href="Quiz.html">Quiz</a></li>
+						<li><a href="sitemap.html">Site Map</a></li>
+						<li><a href="gallery.html">Images</a></li>
+						<li><a href="queries.html">Queries</a></li>
+				    </ul>
+			    </div>			
+			</div>
+		</div>
+
+
+<div class="questions">
+   <!-- questions padding-->
+   
+ 
+    <!-- timer display -->
+        <div id= "time" class="time" >
+		 <p id="timer"> </p>
+	    </div>
+	
+	 <br>
+	
+    <form id= "quiz" name="quiz" >
+	<h1 id="Q">2 plus for every correct answer
+	1 minus for every wrong answer You Got 1 Minute....Start!!!</h1>
+	<hr>
+	<div id = "box">
+	
+
+    <!--questions and  answers-->
+    <p>Q1 Who among the following cricketers has become the first bowler to claim 500 wickets in T20 Cricket?</p>
+    
+    <input type="radio" name="q1" value="Dwayne Bravo"><a> Dwayne Bravo</a><br>
+    <input type="radio" name="q1" value="Stuart Broad"><a> Stuart Broad</a><br>
+    <input type="radio" name="q1" value="James Andreson"><a> James Andreson</a><br>
+    <input type="radio" name="q1" value="Jaspreet Bumrah"><a> Jaspreet Bumrah</a><br>
+	
+	<div id="answer1" style="height: 30px; width: 500px;"> </div>
+    
+	
+	<p>Q2 Triples is a new format of</p>
+	
+	<input type="radio" name="q2" value="Boxing"><a> Boxing</a><br>
+    <input type="radio" name="q2" value="Judo"><a> Judo</a><br>
+    <input type="radio" name="q2" value="Chess"><a> Chess</a><br>
+    <input type="radio" name="q2" value="Badmintion"><a> Badmintion</a><br>
+	
+	<div id="answer2" style="height: 30px; width: 500px;"> </div>
+    
+	
+	<p>Q3 Who is the first and currently the only batsman to score double hundreds in four consecutive test series?</p>
+
+    
+	<input type="radio" name="q3" value="Virat Kohli"><a> Virat Kohli</a><br>
+    <input type="radio" name="q3" value="Rohit Sharma"><a> Rohit Sharma</a><br>
+    <input type="radio" name="q3" value="A.B de Villiers"><a> A.B de Villiers</a><br>
+    <input type="radio" name="q3" value="Brian Lara"><a> Brian Lara</a><br>
+	
+	<div id="answer3" style="height: 30px; width: 500px;"> </div>
+    
+	
+    <p>Q4 Wanamaker Trophy is associated with the game of -</p>
+
+    
+    <input type="radio" name="q4" value="Chess"><a> Chess</a><br>
+    <input type="radio" name="q4" value="Squash"><a> Squash</a><br>
+    <input type="radio" name="q4" value="Golf"><a> Golf</a><br>
+    <input type="radio" name="q4" value="Skating"><a> Skating</a><br>
+	
+	<div id="answer4" style="height: 30px; width: 500px;"> </div>
+    
+	
+	<p>Q5 Where the Winter Olympic Games 2022 will be organized?</p>
+	
+	
+	<input type="radio" name="q5" value="Pyeong Chang, South Korea"><a> Pyeong Chang, South Korea</a><br>
+    <input type="radio" name="q5" value="Vancouver, Canada"><a> Vancouver, Canada</a><br>
+    <input type="radio" name="q5" value="Sochi, Russia"><a> Sochi, Russia</a><br>
+    <input type="radio" name="q5" value="Beijing, China"><a> Beijing, China</a><br>
+	
+	<div id="answer5" style="height: 30px; width: 500px;"> </div>
+    
+	<p>Q6 Which international sports federation has approved a proposal to ensure gender representation in its Council?</p>
+	
+	
+	<input type="radio" name="q6" value="WA"><a> WA</a><br>
+    <input type="radio" name="q6" value="BWF"><a> BWF</a><br>
+    <input type="radio" name="q6" value="FIH"><a> FIH</a><br>
+    <input type="radio" name="q6" value="ISSF"><a> ISSF</a><br>
+	
+	<div id="answer6" style="height: 30px; width: 500px;"> </div>
+    
+	<p>Q7 Who among the following Tennis Player has won the US Open Men's Title 2020?</p>
+
+    
+	<input type="radio" name="q7" value="Roger Federer"><a> Roger Federer</a><br>
+    <input type="radio" name="q7" value="Rafael Nadal"><a> Rafael Nadal</a><br>
+    <input type="radio" name="q7" value="Novak Djokovic"><a> Novak Djokovic</a><br>
+    <input type="radio" name="q7" value="Dominic Thiem"><a> Dominic Thiem</a><br>
+	
+    <div id="answer7" style="height: 30px; width: 500px;"> </div>
+    
+	<p>Q8 Wembly is a famous football stadium in - </p>
+
+    
+	<input type="radio" name="q8" value="Dallas"><a> Dallas</a><br>
+    <input type="radio" name="q8" value="London"><a> London</a><br>
+    <input type="radio" name="q8" value="Barcelona"><a> Barcelona</a><br>
+    <input type="radio" name="q8" value="Seoul"><a> Seoul</a><br>
+	
+    <div id="answer8" style="height: 30px; width: 500px;"> </div>
+    
+	<p>Q9 Who became the first fast bowler of the world to achieve 600 Test Wicket mark? </p>
+
+    
+    <input type="radio" name="q9" value="James Anderson"><a> James Anderson</a><br>
+    <input type="radio" name="q9" value="Lasith Malinga"><a> Lasith Malinga</a><br>
+    <input type="radio" name="q9" value="Glenn McGrath"><a> Glenn McGrath</a><br>
+    <input type="radio" name="q9" value="BB McCullum"><a> BB McCullum</a><br>
+	
+    <div id="answer9" style="height: 30px; width: 500px;"> </div>
+    
+	<p>Q10 Thomas Cup and Uber Cup are prestigious trophies of -</p>
+
+    
+    <input type="radio" name="q10" value="Badmintion"><a> Badmintion</a><br>
+    <input type="radio" name="q10" value="Lawn Tennis"><a> Lawn Tennis</a><br>
+    <input type="radio" name="q10" value="Table Tennis"><a> Table Tennis</a><br>
+    <input type="radio" name="q10" value="Golf"><a> Golf</a><br>
+	
+    <div id="answer10" style="height: 30px; width: 500px;"> </div>
+    
+	<hr>
+	
+	<input id= "button2" type="button" value="I'm Done" onclick="check();">
+	<hr>
+
+		<div id="after_submit">
+		<p id="number_correct"> </p>
+		<p id="message"> </p>
+		
+	</div>
+	</form>
+</div>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 30px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+<!--Timer calculation-->
+			var timer;
+            var sec = 60;
+			var sec2;
+            
+            window.onload = function timecount(){
+                timer = setInterval(function(){ 
+                    sec--;
+                    if (sec == 0){
+                        clearTimeout(timer);
+                        document.getElementById("box").innerHTML = "Time's Up"
+                        }
+                     document.getElementById("timer").innerHTML =   "Timer " + " : " + sec  ;  
+                    },1000); 
+         		 }
+				 				
+<!--Answer validation-->
+	function check(){
+	clearTimeout(timer);
+		var ans1Arr = document.getElementsByName("q1");
+        var ans2Arr = document.getElementsByName("q2");
+        var ans3Arr = document.getElementsByName("q3");
+        var ans4Arr = document.getElementsByName("q4");
+        var ans5Arr = document.getElementsByName("q5");
+        var ans6Arr = document.getElementsByName("q6");
+        var ans7Arr = document.getElementsByName("q7");
+        var ans8Arr = document.getElementsByName("q8");
+        var ans9Arr = document.getElementsByName("q9");
+        var ans10Arr = document.getElementsByName("q10");	
+		var correct = 0;
+
+		
+		var ans1Select = " "; var ans2Select = " "; var ans3Select = " "; var ans4Select = " "; var ans5Select = " ";
+        var ans6Select = " "; var ans7Select = " "; var ans8Select = " "; var ans9Select = " "; var ans10Select = " ";
+				
+				
+	        //Question1
+                for (var i=0; i< ans1Arr.length;i++){
+                    if (ans1Arr[i].checked){
+                        ans1Select = ans1Arr[i].value;
+                        break;
+                    }
+                }
+                if (ans1Select == " ") {
+                    document.getElementById("answer1").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer1").style.color = "red";
+                }
+                else if(ans1Select == "Dwayne Bravo") {
+                    document.getElementById("answer1").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer1").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer1").innerHTML = "Wrong Answer! Correct Answer is Dwayne Bravo." ;
+                    correct--;
+					document.getElementById("answer1").style.color = "red";
+                }
+                
+                //Question2
+                for (var i=0; i< ans2Arr.length;i++){
+                    if (ans2Arr[i].checked){
+                        ans2Select = ans2Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans2Select == " ") {
+                    document.getElementById("answer2").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer2").style.color = "red";
+                }
+                else if(ans2Select == "Badmintion") {
+                    document.getElementById("answer2").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer2").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer2").innerHTML = "Wrong Answer! Correct Answer is Badmintion." ;
+                    correct--;
+					document.getElementById("answer2").style.color = "red";
+                }
+                
+                //Question3
+                for (var i=0; i< ans3Arr.length;i++){
+                    if (ans3Arr[i].checked){
+                        ans3Select = ans3Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans3Select == " ") {
+                    document.getElementById("answer3").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer3").style.color = "red";
+                }
+                else if(ans3Select == "Virat Kohli") {
+                    document.getElementById("answer3").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer3").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer3").innerHTML = "Wrong Answer! Correct Answer is Virat Kohli." ;
+                    correct--;
+					document.getElementById("answer3").style.color = "red";
+                }
+                
+                //Question4
+                for (var i=0; i< ans4Arr.length;i++){
+                    if (ans4Arr[i].checked){
+                        ans4Select = ans4Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans4Select == " ") {
+                    document.getElementById("answer4").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer4").style.color = "red";
+                }
+                else if(ans4Select == "Golf") {
+                    document.getElementById("answer4").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer4").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer4").innerHTML = "Wrong Answer! Correct Answer is Golf." ;
+                    correct--;
+					document.getElementById("answer4").style.color = "red";
+                }
+                
+                //Question5
+                for (var i=0; i< ans5Arr.length;i++){
+                    if (ans5Arr[i].checked){
+                        ans5Select = ans5Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans5Select == " ") {
+                    document.getElementById("answer5").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer5").style.color = "red";
+                }
+                else if(ans5Select == "Beijing, China") {
+                    document.getElementById("answer5").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer5").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer5").innerHTML = "Wrong Answer! Correct Answer is Beijing, China." ;
+                    correct--;
+					document.getElementById("answer5").style.color = "red";
+                }
+                
+                //Question6
+                for (var i=0; i< ans6Arr.length;i++){
+                    if (ans6Arr[i].checked){
+                        ans6Select = ans6Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans6Select == " ") {
+                    document.getElementById("answer6").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer6").style.color = "red";
+                }
+                else if(ans6Select == "BWF") {
+                    document.getElementById("answer6").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer6").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer6").innerHTML = "Wrong Answer! Correct Answer is BWF. " ;
+                    correct--;
+					document.getElementById("answer6").style.color = "red";
+                }
+                
+                //Question7
+                for (var i=0; i< ans7Arr.length;i++){
+                    if (ans7Arr[i].checked){
+                        ans7Select = ans7Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans7Select == " ") {
+                    document.getElementById("answer7").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer7").style.color = "red";
+                }
+                else if(ans7Select == "Dominic Thiem") {
+                    document.getElementById("answer7").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer7").style.color = "green";
+                }
+                else {
+                    document.getElementById("answer7").innerHTML = "Wrong Answer! Correct Answer is Dominic Thiem." ;
+                    correct--;
+					document.getElementById("answer7").style.color = "red";
+                }
+                
+                //Question8
+                for (var i=0; i< ans8Arr.length;i++){
+                    if (ans8Arr[i].checked){
+                        ans8Select = ans8Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans8Select == " ") {					
+                    document.getElementById("answer8").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer8").style.color = "red";
+                }
+                else if(ans8Select == "London") {					
+                    document.getElementById("answer8").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer8").style.color = "green";
+                }
+                else {					
+                    document.getElementById("answer8").innerHTML = "Wrong Answer! Correct Answer is London." ;
+                    correct--;
+					document.getElementById("answer8").style.color = "red";
+                }
+                
+                //Question9
+                for (var i=0; i< ans9Arr.length;i++){
+                    if (ans9Arr[i].checked){
+                        ans9Select = ans9Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans9Select == " ") {					
+                    document.getElementById("answer9").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer9").style.color = "red";
+                }
+                else if(ans9Select == "James Anderson") {					
+                    document.getElementById("answer9").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer9").style.color = "green";
+                }
+                else {					
+                    document.getElementById("answer9").innerHTML = "Wrong Answer!!! Correct Answer is James Anderson." ;
+                    correct--;
+					document.getElementById("answer9").style.color = "red";
+                }
+                
+                //Question10
+                for (var i=0; i< ans10Arr.length;i++){
+                    if (ans10Arr[i].checked){
+                        ans10Select = ans10Arr[i].value;
+                        break;
+                    }
+                }
+                
+                if (ans10Select == " ") {					
+                    document.getElementById("answer10").innerHTML = "You did not select an answer" ;
+					document.getElementById("answer10").style.color = "red";
+                }
+                else if(ans10Select == "Badmintion") {					
+                    document.getElementById("answer10").innerHTML = "Correct answer!!!" ;
+                    correct +=2;
+					document.getElementById("answer10").style.color = "green";
+                }
+                else {					
+                    document.getElementById("answer10").innerHTML = "Wrong Answer! Correct Answer is Badmintion." ;
+                    correct--;
+					document.getElementById("answer10").style.color = "red";
+                }
+				
+	if (correct<0){
+	correct=0;
+	}	
+	
+	//the message according to the marks obtained
+	
+	var messages = ["Well Done!!!","Nicely Done!!!", "Good job!!!", "It's Alright...Refresh the Page Again And Try!"];
+
+	
+	//Change background color according  to the marks obtained
+	
+	var score;
+	if (correct ==20) {
+		score = 0;
+		{
+    document.getElementById("quiz").style.backgroundColor = "#3cb371";
+		}
+		
+	}
+	else if (correct >14) {
+		score = 1;
+		{
+    document.getElementById("quiz").style.backgroundColor = "#3cb371";
+		}		
+	}
+	else if (correct > 8) {
+		score = 2;
+		{
+    document.getElementById("quiz").style.backgroundColor = "#ffa500";
+		}
+	}
+	else  {
+		score = 3;
+		 {
+    document.getElementById("quiz").style.backgroundColor = "#800000";
+		}
+	} 
+	
+	/* Remaining timer to display after the quiz finishes to display results */
+	sec2 = 60 - sec;
+	       
+	document.getElementById("after_submit").style.visibility = "visible";
+	document.getElementById("number_correct").innerHTML = "You scored " + correct + "/20."+  " It took you " + sec2 + " Seconds to complete."; 
+	document.getElementById("message").innerHTML = messages[score];
+
+	}	
+</script>
+
+
+</div>
+<div class="footer">
+      <a href="PageEditor.html">Page Editor</a>
+</div>
+
+</body>
+</html>
